@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survaving Mars</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+            <nav>
+                <a href="Index.html"><img src="pngfind.com-mars-png-512813.png" alt="Logo Surviving Mars" class="logo"></a>
+                <ul class="menu">
+                    <div class="btn"><li><a href="new-article.html">Ajouter une nouvelle entrée</a></li></div>
+                    <div class="btn"><li><a href="compte.html">Accéder au tableau <br> de bord</a></li></div>
+                </ul>
+            </nav>
+
+    <section id="body-r">
+        <div id="header">
+            <div  class="typewriter">
+            <h1>Nouvelle entrée de journal</h1>
+            </div>
+            <!--Si j'enlève du margin sur big-cards, la page tremble le temps de l'animation car il n'y a plus besoin de scroll dedans. Voir avec Thibault pourquoi....-->
+        </div>
+
+        <section id="form">
+            <p><span class="btn"><a href="Index.html">Retour à la page principale</a></span></p>
+
+            <form method="post" action="new-article-done.html">
+               <p>
+                <label for="nom"><span class="bold">Nom</span></label>
+                <input type="text" id="nom" name="nom" maxlength="20" required/>
+
+                <label for="prenom"><span class="bold">Prénom</span></label>
+                <input type="text" id="prenom" name="prenom" maxlength="20"required/>
+               </p>
+
+                <p>
+                <label for="identifiant"><span class="bold">Identifiant</span></label>
+                <input type="text" id="identifiant" name="identifiant" placeholder="XXX-XXX-XXX"required/>
+                </p>
+
+                <p>
+                <label for="date"><span class="bold">Date terrestre</span></label>
+                <input type="date" id="date" name="date" required/>
+                </p>
+
+                <p>
+                <label for="titre"><span class="bold">Titre de l'entrée</span></label>
+                <input type="text" id="titre" name="titre"required/>
+                </p>
+
+                <p>
+                <label for="article"><span class="bold">Saissez votre entrée :</span></label> <br>
+                <textarea name="article" id="article" rows="10" cols="50" required></textarea> 
+                </p>
+
+                    <p><span class="bold">Type d'entrée :</span> <br>
+                <input type="checkbox" id="journal" name="journal"/><label for="journal">Journal de Bord</label><br>
+                <input type="checkbox" id="donnes" name="donnes"/><label for="donnes">Données scientifique</label><br>
+                <input type="checkbox" id="avaries" name="avaries"/><label for="avaries">Rapport d'avaries</label><br>
+                <input type="checkbox" id="urgent" name="urgent"/><label for="urgent">Urgent</label><br>
+                <input type="checkbox" id="confidentiel" name="confidentiel"/><label for="confidentiel">Confidentiel</label><br>
+                </p>
+
+                <p>
+                    <label for="file"><span class="bold">Ajouter un fichier ?</span></label> <br>
+                    <input type="file" name="file" id="file"/>
+                </p>
+
+                <p>
+                    <span class="bold">Classification ?</span> <br>
+                <input type="radio" name="classifie" id="Non" name="Non" checked/><label for="Non">Non</label><br>
+                <input type="radio" name="classifie" id="Oui" name="Oui"/><label for="Oui">Oui</label><br>
+                </p>
+
+                <p>
+                    <input type="submit" value="Envoyer" class="btn"/>
+                </p>
+            </form>
+
+        <footer>
+            <div><h4>Coordonnées</h4>
+            <p><span class="bold"><a href="https://en.wikipedia.org/wiki/Acidalia_Planitia"> Acidalia Planitia</a></span></p>
+            <p>49.8°N 339.3°E</p>
+            <p>initiative-olympe@mars.com</p>
+            </div>
+            <p>Mention Légales</p>
+            <p><div> Icônes conçues par <a href="https://www.flaticon.com/fr/auteurs/roundicons" title="Roundicons"> Roundicons </a> from <a href="https://www.flaticon.com/fr/" title="Flaticon">www.flaticon.com</a></div></p>
+        </footer>
+
+        </section>
+
+    </body>
+</html>

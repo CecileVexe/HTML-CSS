@@ -3,11 +3,14 @@
 }
 
 body{
-    margin: 0;
     z-index: 0;
     background-color: rgb(20, 23, 37);
-    display: flex;
     color: rgb(230, 230, 230);
+    width: 86.5%;
+}
+
+.responsive {
+    display: none;
 }
 
 p {
@@ -106,6 +109,10 @@ nav{
     flex-direction: column;
     justify-content: space-between;
     padding-left: 15%;
+    width: 100%;
+}
+
+header {
     width: 100%;
 }
 
@@ -274,6 +281,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    overflow: hidden;
 }
 
 h4{
@@ -391,4 +399,172 @@ textarea {
 
 .mdp input {
     margin-right: 30px;
+}
+
+@media (max-width: 700px) {
+
+    html { 
+        width: 100%;
+    }
+
+    body {
+        width: 100%;
+        margin: 0;
+        }
+
+    .responsive {
+        display: inline;
+    }
+
+    #body-r {
+        width: 100%
+    }
+
+    h1 {
+        font-size: 1.7em;
+        display: inline-block;
+    }
+
+    nav {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        width: 100%;
+        height: 50px;
+        border-right: 0px solid;
+        border-bottom: 3px solid azure;
+    }
+
+    img.logo {
+        width: 45px;
+    }
+
+    .menu .btn {
+        display: none;
+    }
+
+    #header {
+        width: 100%;
+
+    }
+
+    #body-r {
+        padding-left: 0;
+    }
+
+    #articles {
+        flex-direction: column;
+    }
+
+    .small-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .big-cards{
+        width: 80%;
+        margin: 50px 10px;
+    }
+
+    .big-cards::after{
+    content: "";
+    position: absolute;
+    right: 5px;
+    top: 540px;
+    border: 1px rgb(230, 230, 230) solid;
+    height: 1px;
+    width: 300px;
+    }
+
+    .cards {
+        width: 50%;
+    }
+
+    footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+
+    footer p {
+        text-align: center;
+        margin: 10px 10px;
+    }
+
+/*Article 1*/
+
+.article1 {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.article1 > div {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0 0 0;
+}
+
+.article1 > div p {
+    margin: 0;
+}
+
+.article1 img {
+    width: 100%;
+}
+
+.article1 p:nth-child(3){ 
+margin: 7px 20px 30px 20px;
+}
+
+.tableau {
+    overflow-x: auto;
+}
+
+/*Nouvelle entrée*/
+
+#form div{
+    width: 80%;
+}
+
+textarea {
+    width: 230px;
+    height: 250px;
+}
+
+.form p {
+    text-align: center;
+}
+
+/*Compte*/
+
+#compte {
+    margin: 20px;
+}
+
+#compte p {
+    text-align: left;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+}
+
+.profil {
+    height: 230px;
+    width: 80%;
+}
+
+.description div {
+    margin: 20px;
+}
+
+.mdp {
+    width: 80%;
+}
+
 }

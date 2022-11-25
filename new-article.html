@@ -2,6 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survaving Mars</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -19,7 +20,7 @@
         <header>
             <div id="header">
                 <div  class="typewriter">
-                <h1>Nouvelle entrée de journal</h1>
+                <h1>Nouvelle entrée <br class="responsive">de journal</h1>
                 </div>
                 <!--Si j'enlève du margin sur big-cards, la page tremble le temps de l'animation car il n'y a plus besoin de scroll dedans. Voir avec Thibault pourquoi....-->
             </div>
@@ -27,12 +28,12 @@
 
         <section id="form">
             <p><span class="btn"><a href="Index.html">Retour à la page principale</a></span></p>
-
-            <form method="post" action="new-article-done.html">
+            <div>
+            <form method="post" action="new-article-done.html" class="form">
                <p>
                 <label for="nom"><span class="bold">Nom</span></label>
                 <input type="text" id="nom" name="nom" maxlength="20" required/>
-
+                <br class="responsive"><br class="responsive">
                 <label for="prenom"><span class="bold">Prénom</span></label>
                 <input type="text" id="prenom" name="prenom" maxlength="20"required/>
                </p>
@@ -53,8 +54,8 @@
                 </p>
 
                 <p>
-                <label for="article"><span class="bold">Saissez votre entrée :</span></label> <br>
-                <textarea name="article" id="article" rows="10" cols="50" required></textarea> 
+                <label for="text"><span class="bold">Saissez votre entrée :</span></label> <br>
+                <textarea name="text" id="text" rows="10" cols="150" required></textarea> 
                 </p>
 
                     <p><span class="bold">Type d'entrée :</span> <br>
@@ -80,6 +81,7 @@
                     <input type="submit" value="Envoyer" class="btn"/>
                 </p>
             </form>
+        </div>
 
         <footer>
             <div><h4>Coordonnées</h4>

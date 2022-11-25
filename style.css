@@ -33,6 +33,14 @@ ul {
     font-weight: bold;
 }
 
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
 .menu {
     padding: 0%;
     text-align: center;
@@ -52,17 +60,26 @@ a:visited {
     color:  rgb(230, 230, 230);
 }
 
+.btn {
+    border-radius: 30px;
+    border: 2px solid rgb(230, 230, 230);
+    padding: 10px;
+    margin: 20px;
+    transition: 0.5s ease;
+}
+
 .btn:hover  {
-    background-color: rgb(255, 72, 0);
-    color :rgb(20, 23, 37);
-    box-shadow: 2px 2px 25px rgb(238, 238, 238);
+    /*background-color: rgb(255, 72, 0);*/
+    /*color :rgb(230, 230, 230);*/
+    transform : translateY(-5%);
+    box-shadow: 5px 5px 1px rgb(255, 72, 0);
     transition: 0.5s ease;
     font-weight: bold;
 }
 
-.btn:hover  a {
+/*.btn:hover  a {
     color :rgb(20, 23, 37);
-}
+}*/
 
 img.logo {
     width: 80px;
@@ -71,7 +88,7 @@ img.logo {
 
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
     position: fixed;
     align-items: center;
@@ -328,4 +345,50 @@ form{
 textarea {
     width: 600px;
     height: 250px;
+}
+
+/* Compte */
+
+#compte {
+    margin: 40px;
+}
+
+#compte > div {
+    margin: 10px;
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.description div {
+    margin: 40px;
+}
+
+.description h1 {
+    font-size: 2em;
+}
+
+.profil {
+    position: relative;
+    border: 10px rgb(255, 72, 0) solid;
+    height: 350px;
+    width: 30%;
+    border-radius: 50%;
+    background-image: url('profil.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.profil img {
+    width: 100%;
+}
+
+.mdp input {
+    margin-right: 30px;
 }

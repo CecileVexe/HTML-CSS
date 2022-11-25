@@ -17,12 +17,46 @@
 
     <section id="body-r">
 
-        <div id="header">
-            <div  class="typewriter">
-            <h1>Bienvenue sur votre tableau de bord</h1>
+        <header>
+            <div id="header">
+                <div  class="typewriter">
+                <h1>Bienvenue sur votre tableau de bord</h1>
+                </div>
+                <!--Si j'enlève du margin sur big-cards, la page tremble le temps de l'animation car il n'y a plus besoin de scroll dedans. Voir avec Thibault pourquoi....-->
             </div>
-            <!--Si j'enlève du margin sur big-cards, la page tremble le temps de l'animation car il n'y a plus besoin de scroll dedans. Voir avec Thibault pourquoi....-->
-        </div>
+        </header>
+
+        <article id="compte">
+            <p><span class="btn"><a href="Index.html">Retour à la page principale</a></span></p>
+            <div class="description">
+                <div class="profil"></div>
+                <div>
+                <p>
+                    <span class="bold"> <h1>Dr Mark Watney </h1></span>
+                </p> 
+                <p>
+                Botaniste et ingénieur médical de la mission Ares III <br>
+                Identifiant : 221-197-207
+                </p>
+                <p>
+                    Dernière activité : <a href="Artile1.html">Entrée de journal / <span class="italic underline">SOL 350 - Reconstruction de l'abri terminé</span></a>
+                </p>
+                </div>
+            </div>
+
+            <div class="mdp">
+                <form action="post">
+                    <label for="mdp-new-1">Nouveau mot de passe</label>
+                    <input type="password" name="mdp-new-1" id="mdp-new-1"/>
+
+                    <label for="mdp-new-2">Rentrez de nouveau votre mot de passe</label>
+                    <input type="password" name="mdp-new-2" id="mdp-new-2"/>
+
+                    <input type="submit" value="Envoyer" class="btn"/>
+                </form>
+            </div>
+
+        </article>
 
         <footer>
             <div><h4>Coordonnées</h4>
@@ -34,7 +68,6 @@
             <p><div> Icônes conçues par <a href="https://www.flaticon.com/fr/auteurs/roundicons" title="Roundicons"> Roundicons </a> from <a href="https://www.flaticon.com/fr/" title="Flaticon">www.flaticon.com</a></div></p>
         </footer>
 
-        </section>
-
+    </section>
     </body>
 </html>

@@ -40,59 +40,59 @@
         </header>
 
         <section id="form">
-            <p><span class="btn"><a href="Index.html">Retour à la page principale</a></span></p>
+            <p><span><a href="Index.html" class="btn">Retour à la page principale</a></span></p>
             <div>
             <form method="post" action="new-article-done.html" class="form">
-               <p>
-                <label for="nom"><span class="bold">Nom</span></label>
-                <input type="text" id="nom" name="nom" maxlength="20" required/>
-                <br class="responsive"><br class="responsive">
-                <label for="prenom"><span class="bold">Prénom</span></label>
-                <input type="text" id="prenom" name="prenom" maxlength="20" required/>
-               </p>
+               <div>
+                <div><label for="nom"><span class="bold">Nom : </span></label>
+                <input type="text" id="nom" name="nom" maxlength="20" required/></div>
+                <div><label for="prenom"><span class="bold">Prénom : </span></label>
+                <input type="text" id="prenom" name="prenom" maxlength="20" required/></div>
+               </div>
 
-                <p>
-                <label for="identifiant"><span class="bold">Identifiant</span></label>
+                <div>
+                <label for="identifiant"><span class="bold">Identifiant : </span></label>
                 <input type="text" id="identifiant" name="identifiant" placeholder="XXX-XXX-XXX" required/>
-                </p>
+                </div>
 
-                <p>
-                <label for="date"><span class="bold">Date terrestre</span></label>
+                <div>
+                <label for="date"><span class="bold">Date terrestre : </span></label>
                 <input type="date" id="date" name="date" required/>
-                </p>
+                </div>
 
-                <p>
-                <label for="titre"><span class="bold">Titre de l'entrée</span></label>
+                <div>
+                <label for="titre"><span class="bold">Titre de l'entrée : </span></label>
                 <input type="text" id="titre" name="titre" required/>
-                </p>
+                </div>
 
-                <p>
-                <label for="text"><span class="bold">Saissez votre entrée :</span></label> <br>
+                <div>
+                <label for="text"><span class="bold">Saissez votre entrée :</span></label>
                 <textarea name="text" id="text" rows="10" cols="150" required></textarea> 
-                </p>
+                </div>
 
-                    <p><span class="bold">Type d'entrée :</span> <br>
-                <input type="checkbox" id="journal" name="journal"/><label for="journal">Journal de Bord</label><br>
-                <input type="checkbox" id="donnes" name="donnes"/><label for="donnes">Données scientifique</label><br>
-                <input type="checkbox" id="avaries" name="avaries"/><label for="avaries">Rapport d'avaries</label><br>
-                <input type="checkbox" id="urgent" name="urgent"/><label for="urgent">Urgent</label><br>
-                <input type="checkbox" id="confidentiel" name="confidentiel"/><label for="confidentiel">Confidentiel</label><br>
-                </p>
+                    <div class="inline-label">
+                <span class="bold">Type d'entrée :</span>
+                <label for="journal"><input type="checkbox" id="journal" name="journal"/>Journal de Bord</label>
+                <label for="donnes"><input type="checkbox" id="donnes" name="donnes"/>Données scientifique</label>
+                <label for="avaries"><input type="checkbox" id="avaries" name="avaries"/>Rapport d'avaries</label>
+                <label for="urgent"><input type="checkbox" id="urgent" name="urgent"/>Urgent</label>
+                <label for="confidentiel"><input type="checkbox" id="confidentiel" name="confidentiel"/>Confidentiel</label>
+                    </div>
 
-                <p>
-                    <label for="file"><span class="bold">Ajouter un fichier ?</span></label> <br>
+                <div>
+                    <label for="file"><span class="bold">Ajouter un fichier ?</span></label>
                     <input type="file" name="file" id="file"/>
-                </p>
+                </div>
 
-                <p>
+                <div class="classife">
                     <span class="bold">Classification ?</span> <br>
-                <input type="radio" id="Non" name="Non" checked/><label for="Non">Non</label><br>
-                <input type="radio" id="Oui" name="Oui"/><label for="Oui">Oui</label><br>
-                </p>
+                <input type="radio" id="Non" name="classife" checked/><label for="Non">Non</label>
+                <input type="radio" id="Oui" name="classife"/><label for="Oui">Oui</label>
+                </div>
 
-                <p>
+                <div>
                     <input type="submit" value="Envoyer" class="btn"/>
-                </p>
+                </div>
             </form>
         </div>
         </section>

@@ -74,6 +74,7 @@ a:visited {
     padding: 10px;
     margin: 20px;
     transition: 0.5s ease;
+    display: inline-block;
 }
 
 .btn:hover  {
@@ -107,6 +108,10 @@ nav{
     background-repeat: no-repeat;
     border-right: 3px solid azure;
     z-index: 1;
+}
+
+nav a {
+    display: inline-block;
 }
 
 #body-r {
@@ -291,6 +296,25 @@ footer {
     align-items: center;
 }
 
+#form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#form div {
+    margin: 10px 0;
+}
+
+#form form label {
+    display: block;
+}
+
+.classife label {
+    display: inline !important;
+}
+
+
 h4{
     color: rgb(255, 255, 255);
     font-size: 1.5em;
@@ -374,6 +398,8 @@ form{
     align-self: center;
     padding: 20px;
 }
+
+
 
 textarea {
     width: 600px;
@@ -635,6 +661,24 @@ textarea {
 
     #form div{
         width: 80%;
+    }
+
+    #form form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #form div {
+        margin: 10px 0;
+    }
+
+    #form form label {
+        display: block;
+    }
+
+    .classife label {
+        display: inline !important;
     }
 
     textarea {

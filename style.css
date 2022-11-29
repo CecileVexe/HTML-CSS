@@ -595,8 +595,8 @@ textarea {
     .big-cards::after{
     content: "";
     position: absolute;
-    right: -3px;
-    top: 610px;
+    right: 10px;
+    top: 572px;
     border: 1px rgb(230, 230, 230) solid;
     height: 1px;
     width: 300px;

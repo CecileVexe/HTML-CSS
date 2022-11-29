@@ -213,15 +213,6 @@ h1 {
     flex-direction: column;
 }
 
-.big-cards::after{
-    content: "";
-    position: absolute;
-    right: -30px;
-    top: 15px;
-    border: 1px rgb(230, 230, 230) solid;
-    height: 500px;
-}
-
 h2 {
     margin: 5px;
 }
@@ -590,16 +581,6 @@ textarea {
     .big-cards{
         width: 80%;
         margin: 50px 10px;
-    }
-
-    .big-cards::after{
-    content: "";
-    position: absolute;
-    right: 10px;
-    top: 572px;
-    border: 1px rgb(230, 230, 230) solid;
-    height: 1px;
-    width: 300px;
     }
 
     .cards {

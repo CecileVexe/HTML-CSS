@@ -84,9 +84,9 @@ a:visited {
     color :rgb(20, 23, 37);
 }*/
 
-a.btn.retour {
-    text-align: center;
-    width: 18%;
+.btn.retour {
+    text-align: center !important;
+    width: 18% !important;
 }
 
 img.logo {
@@ -667,8 +667,8 @@ textarea {
         overflow-x: auto;
     }
 
-    a.btn.retour {
-        width: 60%;
+    .btn.retour {
+        width: 60% !important;
     }
 
     /*Nouvelle entrée*/
@@ -730,6 +730,10 @@ textarea {
 
     .mdp {
         width: 80%;
+    }
+
+    .mdp label {
+        display: inline-block;
     }
 
 }
